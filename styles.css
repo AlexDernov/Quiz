@@ -17,15 +17,18 @@ h1 {
 main {
     margin: 0 0 100px 0;
 }
-.img_bookmarks {
+.svg_bookmarks {
+    color: brown;
+}
+.svg_bookmarks_corner {
+    width: 5px;
+    height: 5px;
+}
+.svg_home {
     width: 20px;
     height: 20px;
 }
-.img_home {
-    width: 20px;
-    height: 20px;
-}
-.img_profil {
+.svg_profil {
     width: 20px;
     height: 20px;
 }
@@ -89,5 +92,20 @@ main {
     margin: 30px;
     width: 150px;
     height: 30px;
-
+}
+.home {
+   border:none;
+   background-color: aquamarine;
+   cursor: pointer;
+}
+.bookmark{
+   border:none;
+   background-color: aquamarine;
+   cursor: pointer;
+   
+}
+.profil {
+    border:none;
+   background-color: aquamarine;
+   cursor: pointer;
 }
