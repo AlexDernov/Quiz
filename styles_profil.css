@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: center;
 }
-👍🏻
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 0 20px 0;
@@ -104,47 +103,96 @@ header {
     margin: 10px 0px 0px 20px;
     max-inline-size: 200px;
     right:10px;
-    width: 64px;
+    width: 60px;
     height: 34px;
     display: flex;
     align-self: center;
     justify-content: center;
     position: relative;
+    display: inline-block;
 }
-
+.switch_for_dark input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 .switch_for_dark .switch-input {
     display: none;
 }
 
-.switch_for_dark .switch-label {
+.switch_for_dark .slider_round {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 24px;
+    width: 50px;
+    height: 30px;
     background-color: aquamarine;
     border-radius: 34px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.toggle-switch .toggle-label::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-}
-  
+
 .switch_for_dark .switch-input:checked + .switch-label {
     background-color: #4CAF50;
 }
+  /* 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
   
+  /* Hide default HTML checkbox */
+  
+  
+  /* The slider */
+  .slider_round {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #09583c;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider_round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 1px;
+    background-color: rgb(239, 245, 242);
+    border-style: solid;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider_round {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider_round {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider_round:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+ 
+  .slider_round {
+    border-radius: 34px;
+  }
+  .slider_round:before {
+    border-radius: 50%;
+  }
 .svg_bookmarks {
     width: 20px;
     height: 20px;
