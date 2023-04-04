@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
 }
+👍🏻
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 0 20px 0;
@@ -17,15 +18,140 @@ h1 {
 main {
     margin: 0 0 100px 0;
 }
-.coumter_question {
-    background-color: black;
+header {
+    display: flex;
+    justify-content: space-around;
 }
+.name {
+    align-self: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif: 
+}
+.round {
+    margin: 20px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    background-color: aquamarine;
+    border-color: aquamarine;
+    box-shadow: 5px 5px 5px  rgba(6, 74, 20, 0.475)
+}
+.about_box {
+    
+    margin: 20px;
+    padding: 20px;
+}
+.about_me {
+    margin: 20px;
+    font-family: cursive;
+}
+.counter_box { 
+    margin:0 40px 0 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.counter_questions {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    position: relative;
+
+}
+.counter_bookmarks {
+    display: flex;
+    width: 60px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    position: relative;
+}
+.icon_question, .icon_bookmark {
+    position: absolute;
+    top: 6px;
+    left:10px;
+}
+.zahlen {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+.svg_profil_big {
+    width: 100px;
+    height: 100px;
+}
+.settings {
+    margin: 10px;
+    padding: 10px;
+}
+.settings_title {
+    font-family: cursive;
+}
+.mode {
+    position: flex;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    border-style: none;
+}
+.mode_titel {
+    margin: 20px;
+}
+.switch_for_dark {
+    margin: 10px 0px 0px 20px;
+    max-inline-size: 200px;
+    right:10px;
+    width: 64px;
+    height: 34px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+}
+
+.switch_for_dark .switch-input {
+    display: none;
+}
+
+.switch_for_dark .switch-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 24px;
+    background-color: aquamarine;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch .toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+  
+.switch_for_dark .switch-input:checked + .switch-label {
+    background-color: #4CAF50;
+}
+  
 .svg_bookmarks {
-    color: brown;
+    width: 20px;
+    height: 20px;
 }
 .svg_home {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .svg_profil {
     width: 20px;
