@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
-    <link rel="stylesheet" href="./styles_profil.css" />
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles_profil.css"/>
   </head>
-  <body class="body">
+  <body data-js="body">
     <header class="header">
       <h1>Quiz App</h1>
     </header>
@@ -75,9 +76,9 @@
       <section class="settings">
         <h3 class="settings_title">Settings</h3>
         <div class="mode">
-          <p class="mode_titel">Dark Mode</p>
+          <p  id="DarkMode" class="mode_titel">Dark Mode</p>
           <label class="switch_for_dark">
-            <input class="switch-input" type="checkbox" />
+            <input onclick="switchColor()" data-js="switch" class="switch-input" type="checkbox" />
             <span class="slider_round"></span>
           </label>
         </div>
