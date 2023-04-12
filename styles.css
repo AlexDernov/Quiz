@@ -1,12 +1,26 @@
+
+@import "questionbox-style.css";
+*
+*::before
+*::after { 
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: aquamarine;
+    --background-color: white;
+    --solid-border: solid;
+
+}
+
 body {
-    border-style: solid;
+    border-style: var(--solid-border);
     margin: 10px;
 }
 .body__header {
     padding: 0 0 30px 0;
     width: 100%;
     height: 50px;
-    border-bottom-style: solid;
+    border-bottom-style: var(--solid-border);
     display: flex;
     justify-content: center;
 }
@@ -17,18 +31,12 @@ h1 {
 .main {
     margin: 0 0 100px 0;
 }
-.svg_bookmarks {
-    color: brown;
-}
-.question-box__bookmark-icon--corner  {
-    width: 5px;
-    height: 5px;
-}
-.svg_home {
+
+.footer__buttom-icon--home {
     width: 20px;
     height: 20px;
 }
-.svg_profil {
+.footer__buttom-icon--profil {
     width: 20px;
     height: 20px;
 }
@@ -39,60 +47,12 @@ h1 {
     padding: 20px 0 20px 0;
     display: flex;
     justify-content: space-around;
-    border-top-style: solid;
-    background-color: aquamarine;
+    border-top-style: var(--solid-border);
+    background-color: var(--primary-color); 
     
 
 }
-.tags {
-    padding: 10px 20px 0 20px;
-    align-self: flex-start;
-}
-.html {
-    padding:5px;
-    border-style: solid;
-    border-radius: 15%;
-    background-color: darkgrey;
-}
-.flexbox {
-    padding:5px;
-    border-style: solid;
-    border-radius: 15%;
-    background-color: darkgrey;
-}
-.css {
-    padding:5px;
-    border-style: solid;
-    border-radius: 15%;
-    background-color: darkgrey;}
 
-.question-box {  
-    position:relative;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: solid;
-}
-.question-box__bookmark--corner {
-    position: absolute;
-    top: -8px;
-    right: 10px;
-}
-.guestions {
-    text-align: center;
-    padding: 10px;
-}
-.show_answer {
-    text-align: center;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-    width: 150px;
-    height: 30px;
-}
 /* 
 .show_answer {
     margin: 30px;
@@ -134,19 +94,19 @@ h1 {
   .show_answer:focus {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
   }*/
-.home {
+.footer__buttom--home {
    border:none;
-   background-color: aquamarine;
+   background-color: var(--primary-color); 
    cursor: pointer;
 }
-.bookmark{
+.footer__buttom--bookmark{
    border:none;
-   background-color: aquamarine;
+   background-color: var(--primary-color); 
    cursor: pointer;
    
 }
-.profil {
+.footer__buttom--profil {
     border:none;
-   background-color: aquamarine;
+   background-color: var(--primary-color); 
    cursor: pointer;
 }

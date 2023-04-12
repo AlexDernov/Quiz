@@ -13,3 +13,5 @@ switchButton.addEventListener("click", () => {
       };
     /*document.getElementById("DarkMode").innerHTML = "Light Mode";*/
 });
+const answerButton1 = document.querySelector('[data-js="answer-button1"]');
+const answerButton2 = document.querySelector('[data-js="answer-button2"]');
