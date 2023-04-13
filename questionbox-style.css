@@ -36,12 +36,66 @@
     align-items: center;
     border-style: solid;
 }
-.question-box__bookmark-icon--corner, footer__buttom-icon--bookmark {
+.ribbon {
+    width: 0px;
+    height: 15px;
+    background-color: transparent;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    border: solid 15px lightpink;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .ribbon2 {
+    width: 0px;
+    height: 15px;
+    background-color: transparent;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    border: solid 15px lightpink;
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  /* .ribbon:hover {
+    border-color: rgb(215, 97, 114);
+    border-bottom-color: transparent;
+  } */
+  
+  .choose {
+    width: 0px;
+    height: 15px;
+    background-color: transparent;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    border: solid 15px rgb(164, 11, 34);
+    border-bottom: solid 15px transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+    /* border-color: rgb(215, 32, 59);
+    border-bottom-color: transparent; */
+  }
+/* .question-box__bookmark-icon--corner, footer__buttom-icon--bookmark {
     position: absolute;
     background-color: var(--background-color);
     top: -8px;
     right: 10px;
     cursor: pointer;
+}
+.question-box__bookmark-icon--corner-choose {
+    background-color: var(--bookmark-choose-color); */
+   
 }
 .question-box__guestions {
     text-align: center;
@@ -56,7 +110,22 @@
     width: 150px;
     height: 30px;
 }
-.question-box__answer-text {
+.question-box__answer-text1-hidden {
     margin: 0 20px 20px 0;
-
+    /* display: none; */
+    visibility: hidden;
+ 
+}
+.question-box__answer-text1-visible {
+    margin: 0 20px 20px 0;
+    /* display: block !important; */
+    visibility: visible;
+}
+.question-box__answer-text2-hidden {
+    margin: 0 20px 20px 0;
+    visibility: hidden; 
+}
+.question-box__answer-text2-visible {
+    margin: 0 20px 20px 0;
+    visibility: visible;
 }

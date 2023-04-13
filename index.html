@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css"/>
+    
 </head>
 <body class="body">
     <header class="body__header">
@@ -13,30 +14,36 @@
     </header>
     <main class="main">
         <section name="question-box" class="question-box">
-            <button name="buttom_bookmarks" class="question-box__bookmark--corner"><svg class="question-box__bookmark-icon--corner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+            <button name="buttom_bookmarks" data-js="bookmark-button" class="question-box__bookmark--corner"><!-- <svg data-js="bookmark-icon" class="question-box__bookmark-icon--corner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-              </svg></button>
+              </svg> -->
+              <div class="ribbon" data-js="ribbon"></div>
+            </button>
             <h2 name="question-1" class="question-box__questions">What property flips the axes in flexbox?</h2>
-            <button name="button" data-js="answer-button1"class="question-box__button-answer">Show Answer</button>
-            <div name="answer" class="question-box__answer-text" data-js="answer-text">Answer of the question</div>
+            <button name="button" id="ShowAnswer1" data-js="answer-button1"class="question-box__button-answer">Show Answer</button>
+            <div name="answer" class="question-box__answer-text1-hidden" data-js="answer-text1">Answer of the question</div>
             <div class="question-box__tags">
                 <buttom name="tag-button" class="question-box__tags--html">#html</buttom>
                 <buttom name="tag-button" class="question-box__tags--flexbox">#flexbox</buttom>
                 <buttom name="tag-button" class="question-box__tags--css">#css</buttom>
             </div>
+            
         </section>
         <section name="question-box" class="question-box">
-            <button name="buttom_bookmarks" class="question-box__bookmark--corner"><svg class="question-box__bookmark-icon--corner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+            <button name="buttom_bookmarks2" data-js="bookmark-button2" class="question-box__bookmark--corner"><!-- <svg data-js="bookmark-icon2" class="question-box__bookmark-icon--corner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-              </svg></button>
+              </svg> -->
+              <div class="ribbon2" data-js="ribbon2"></div>
+            </button>
             <h2 name="question2" class="questions">Lorem Impsum dolor sit?</h2>
-            <button name="button" data-js="answer-button2"class="question-box__button-answer">Show Answer</button>
-            <div name="answer" class="question-box__answer-text" data-js="answer-text">Answer of the question</div>
+            <button name="button" id="ShowAnswer2" data-js="answer-button2"class="question-box__button-answer">Show Answer</button>
+            <div name="answer" class="question-box__answer-text2-hidden" data-js="answer-text2">Answer of the question</div>
             <div class="question-box__tags">
                 <buttom name="tag-button" class="question-box__tags--html">#html</buttom>
                 <buttom name="tag-button" class="question-box__tags--flexbox">#flexbox</buttom>
                 <buttom name="tag-button" class="question-box__tags--css">#css</buttom>
             </div>
+            <div class="ribbon" data-js="ribbon"></div>
         </section>
     </main>
     <nav name="footer" class="footer">
@@ -44,9 +51,9 @@
             <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
             <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
           </svg></button></button>
-        <button name="footer__buttom" class="footer__buttom--bookmark"><svg class="footer__buttom-icon--bookmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+        <button name="footer__buttom" class="footer__buttom--bookmark"><!-- <svg data-js="bookmark-icon-footer" class="footer__buttom-icon--bookmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
             <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-          </svg>
+          </svg> --><div class="ribbon-footer" data-js="ribbon-footer"></div>
           </button>
         <button name="footer-buttom" class="footer__buttom--profil"><svg class="footer__buttom-icon--profil" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
@@ -54,6 +61,7 @@
             </button>
     </nav>
 </body>
+<script src="./index.js" defer></script>
 </html>
 
 

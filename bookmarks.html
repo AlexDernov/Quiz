@@ -11,13 +11,14 @@
         <header class="body__header">
             <h1 name="App-title">Quiz App</h1>
         </header>
-        <main name="bookmarks-saved">
+        <main name="main" class="main">
             <section name="question-box" class="question_box">
                 <button name="buttom_bookmarks" class="question_box__bookmark--corner"><svg class="question-box__bookmark-icon--corner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
                     <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
                   </svg></button>
                 <h2 name="question-1" class="question-box__questions">What property flips the axes in flexbox?</h2>
-                <button name="button" class="question-box__button-answer">Show Answer</button>
+                <button name="button" data-js="answer-button1" class="question-box__button-answer">Show Answer</button>
+                <div name="answer" class="question-box__answer-text" data-js="answer-text">Answer of the question</div>
                 <div class="questio-box__tags">
                     <buttom name="tag-button" class="question-box__tags--html">#html</buttom>
                     <buttom name="tag-button" class="question-box__tags--flexbox">#flexbox</buttom>
