@@ -56,7 +56,7 @@
     width: 150px;
     height: 30px;
 }
-question-box__answer-text {
-    margin: 20px;
-    
+.question-box__answer-text {
+    margin: 0 20px 20px 0;
+
 }
