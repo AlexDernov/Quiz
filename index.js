@@ -32,7 +32,7 @@ const bookmarkIcon2 = document.querySelector('[data-js="bookmark2-icon"]');
 const bookmarkIconFooter = document.querySelector('[data-js="bookmark-icon-footer"]'); */
 
 bookmarkButton.addEventListener("click", () => {
-  bookmarkIcon.classList.toogle("choose");
+  bookmarkIcon.classList.toggle("choose");
   /* bookmarkIconFooter.classList.toogle("question-box__bookmark-icon--corner-choose"); */
 
 });
